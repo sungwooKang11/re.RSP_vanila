@@ -1,37 +1,94 @@
 body {
+    width: 100vw; height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #e5e5e5;
 }
 
 .container {
+    background-color: #ffffff;
     width: 1200px; height: 640px;
     display: grid;
-    
+    grid-template-columns: 150px 370px 160px 370px 150px;
+    grid-template-rows: 110px 420px 110px;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.welcome {
+    grid-column: 2/ 3; grid-row: 1/ 2;
+    width: 370px;
+    text-align: center;
 }
 
 .con1 {
-    width: 372px; height: 415px;
+    grid-column: 2/ 3; grid-row: 2/ 3;
+    width: 370px; height: 420px;
     background-color: #E3E3E3;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 20px;
 }
 
 .con2 {
-    width: 372px; height: 415px;
+    grid-column: 4/ 5; grid-row: 2/ 3;
+    width: 370px; height: 420px;
     background-color: #E3E3E3;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 20px;
+}
+
+.p {
+    margin-top: 15px;
 }
 
 .valCon {
     width: 100%; height: 100px;
     background-color: #F1BDA0;
     text-align: center;
+    margin-top: 20px;
 }
 
 .myValue {
     height: 40px;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+.valCon2 {
+    width: 100%; height: 100px;
+    background-color: #F1BDA0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.p2 {
+    margin-top: 15px;
+}
+
+.wl {
+    grid-column: 3/ 4; grid-row: 2/ 3;
+    text-align: center;
+}
+
+.btnDiv {
+    margin-top: 80px;
+    width: 300px; height: 90px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+button {
+    width: 80px; height: 60px;
+    border: 3px solid bisque;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    font-size: large;
+    font-weight: 500;
 }

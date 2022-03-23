@@ -44,28 +44,28 @@ const randomPlay = (a) => {
     }
        
     if( a == 0 && comValue == 1 ) {
-        console.log("lose"); 
-        wl.innerHTML = "lose";///패배 표시
+        console.log("You lose"); 
+        wl.innerHTML = "You lose";///패배 표시
     }else if( a == 1 && comValue == 2){
-        console.log("lose");
-        wl.innerHTML = "lose";///
+        console.log("You lose");
+        wl.innerHTML = "You lose";///
     }else if(a ==2 && comValue == 0){
-        console.log("lose");
-        wl.innerHTML = "lose";///
+        console.log("You lose");
+        wl.innerHTML = "You lose";///
     }else if(a == 0 && comValue == 2){
-        console.log("win");
+        console.log("You win");
         num += 1;
-        wl.innerHTML = "win";///승리 표시
+        wl.innerHTML = "You win";///승리 표시
         score.innerText = num
     }else if(a == 1 && comValue == 0) {
-        console.log("win");
+        console.log("You win");
         num += 1;
-        wl.innerHTML = "win";///
+        wl.innerHTML = "You win";///
         score.innerText = num
     }else if(a == 2 && comValue == 1){
-        console.log("win");
+        console.log("You win");
         num += 1;
-        wl.innerHTML = "win";///
+        wl.innerHTML = "You win";///
         score.innerText = num
     }else{
         console.log("draw");
